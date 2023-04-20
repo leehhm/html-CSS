@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="utf-8">
+<meta name = "viewport" content = "width= device - width, initial - scale = 1">
+<title>플랙스 박스</title>
+	<style>
+#container {
+	width : 100%;
+	margin:0;
+	padding:0;
+}
+header {
+	width : 100%;
+	border : 1px solid blue;
+}
+header h1 {
+  font-size:3em;
+  text-align: center;
+}
+#menus div {
+	position : relative;
+	height : 400px;
+	border:1px solid black;
+}
+#menus h2 {
+  position:absolute;
+  padding:5px;
+  font-size:2em;
+  color: white;
+  right:3%;
+  bottom:10px;
+}
+footer {
+  width:100%;
+  background:#373737;
+  height:200px;
+}
+footer p {
+  font-size:1.2em;
+  color:#eee;
+  text-align:center;
+   line-height:200px;
+}
+@media screen and (min-width:680px) {
+	#menu1, #memu2, #menu3, #menu4 {
+    	width: 49%;
+	}
+	#menu5 {
+ 		width : 100%;
+	}
+	#menus div {
+		display : flex;
+  		flex-wrap : wrap;
+  		justify-content: space-between;
+    	}
+}
+@media screen and (min-width : 900px) {
+	#container {
+		width:100%;
+	}
+	#menu1, #menu2, #menu3, #menu4 {
+		width:33%;
+	}
+	#menu5 {
+		width : 66%;
+	}
+}
+	</style>
+</head>
+<body>
+	<div id = "container">
+	<section id = "menus">
+	<header><h1>제목</h1></header>
+		<div id = " menu1" style = "background-color : blue;">
+			<h2>1</h2>
+		</div>
+		<div id = " menu2" style = "background-color : black;">
+			<h2>2</h2>
+		</div>
+		<div id = " menu3" style = "background-color : blue;">
+			<h2>3</h2>
+		</div>
+		<div id = " menu4" style = "background-color : black;">
+			<h2>4</h2>
+		</div>
+		<div id = " menu5" style = "background-color : blue;">
+			<h2>5</h2>
+		</div>
+		</section>
+	</div>
+	<footer><p>바닥</p></footer>
+</body>
+</html>

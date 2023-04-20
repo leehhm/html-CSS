@@ -1,0 +1,8 @@
+@charset "EUC-KR";
+h2{
+    color:blue;
+}
+p {
+    font-size: 0.9em;
+    line-height: 2.0;
+}

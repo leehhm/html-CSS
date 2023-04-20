@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+<meta charset="utf-8">
+<title>속성 선택자</title>
+	<style>
+		a[ritle ^= "eng"] {
+			background : url(images/us.jpg) no-repeat left center;
+			padding : 5px 25px;
+		}
+		a[ritle ^= "jap"] {
+			background : url(images/jp.jpg) no-repeat left center;
+			padding : 5px 25px;
+		}
+		a[ritle ^= "chin"] {
+			background : url(images/ch.jpg) no-repeat left center;
+			padding : 5px 25px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href = "#" title = "english">영어</a></li>
+		<li><a href = "#" title = "japanese">일본어</a></li>
+		<li><a href = "#" title = "chinese">중국어</a></li>
+	</ul>
+</body>
+</html>
